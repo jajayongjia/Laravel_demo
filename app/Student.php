@@ -7,9 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 class Student extends Model
 {
     protected $fillable=['name','phoneNumber','email'];
-    public $name;
-    public $phoneNumber;
-    public $email;
+    private $name;
+    private $phoneNumber;
+    private $email;
 
     public function setName($name){
       $this->name = $name;
